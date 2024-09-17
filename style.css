@@ -235,4 +235,8 @@ img {
         height: 250px;
         font-size: 70px;
     }
+
+    #reset-btn {
+        margin-top: 20px;
+    }
 }
