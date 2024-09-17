@@ -1,1 +1,1 @@
-# lwc-scoreboard
+# scoreboard
