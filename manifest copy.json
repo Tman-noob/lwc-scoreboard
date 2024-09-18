@@ -2,31 +2,30 @@
     "name": "LWC Scoreboard App",
     "short_name": "LWC Scoreboard",
     "description": "A scorebaord app for LWC to use for tracking scores.",
-    "start_url": "/lwc-scoreboard",
-    "display": "fullscreen",
+    "start_url": "/",
+    "display": "standalone",
     "background_color": "#3E542B",
-    "orientation": "landscape-primary",
     "icons": [
         {
-            "src": "/lwc-scoreboard/mobile_ts.png",
+            "src": "/mobile_ts.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/lwc-scoreboard/wide_ts.png",
+            "src": "/wide_ts.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "screenshots": [
     {
-      "src": "/lwc-scoreboard/wide_screen.png",
+      "src": "/wide_screen.png",
       "sizes": "1919x907",
       "type": "image/png",
       "form_factor": "wide"
     },
     {
-      "src": "/lwc-scoreboard/mobile_screen.png",
+      "src": "/mobile_screen.png",
       "sizes": "913x418",
       "type": "image/png"
     }

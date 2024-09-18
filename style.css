@@ -269,7 +269,7 @@ h2 {
     }
 }
 
-@media (min-width: 905px) and (orientation: landscape) {
+@media (min-width: 905px) {
     img {
         width: 60px;
         height: 70px;
