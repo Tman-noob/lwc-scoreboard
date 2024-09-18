@@ -2,7 +2,7 @@
     "name": "LWC Scoreboard App",
     "short_name": "LWC Scoreboard",
     "description": "A scorebaord app for LWC to use for tracking scores.",
-    "start_url": "https://tman-noob.github.io/lwc-scoreboard/",
+    "start_url": "/lwc-scoreboard/",
     "display": "fullscreen",
     "background_color": "#3E542B",
     "theme_color": "#AFE480",
