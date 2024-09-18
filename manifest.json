@@ -3,9 +3,8 @@
     "short_name": "LWC Scoreboard",
     "description": "A scorebaord app for LWC to use for tracking scores.",
     "start_url": "/lwc-scoreboard",
-    "display": "fullscreen",
+    "display": "standalone",
     "background_color": "#3E542B",
-    "theme_color": "#AFE480",
     "icons": [
         {
             "src": "/lwc-scoreboard/mobile_ts.png",

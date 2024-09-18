@@ -4,6 +4,11 @@
     url(fonts/CursedTimerUlil-Aznm.ttf);
 }
 
+* {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -17,7 +22,6 @@ body {
     margin: auto;
     max-width: 1200px;
     text-align: center;
-    touch-action: manipulation;
 }
 
 .head {
