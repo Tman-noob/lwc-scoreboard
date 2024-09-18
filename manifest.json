@@ -8,14 +8,27 @@
     "theme_color": "#AFE480",
     "icons": [
         {
-            "src": "/lwc_logo.png",
+            "src": "/mobile_ts.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/lwc_logo.png",
+            "src": "/wide_ts.png",
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "screenshots": [
+    {
+      "src": "/wide_screen.png",
+      "sizes": "1919x907",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/mobile_screen.png",
+      "sizes": "913x418",
+      "type": "image/png"
+    }
+  ]
 }
