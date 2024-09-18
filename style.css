@@ -33,12 +33,11 @@ img {
     height: 52px;
 }
 
-.nav h2 {
-    margin-top: -30px;
+h2 {
+    margin-top: -10px;
     font-size: 1.8rem;
     font-weight: 750;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.582);
-    position: relative;
 
 }
 
@@ -116,7 +115,7 @@ img {
 
 @media (min-width: 412px) {
     .nav h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #left-btn,
@@ -149,7 +148,7 @@ img {
     }
     
     .nav h2 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         margin-top: -40px;
     }
     
@@ -270,14 +269,14 @@ img {
     }
 }
 
-@media (min-width: 915px) and (orientation: landscape) {
+@media (min-width: 905px) and (orientation: landscape) {
     img {
         width: 60px;
         height: 70px;
     }
     
     .nav h2 {
-        margin-top: -60px;
+        margin-top: -40px;
         font-size: 3rem;
     }
     
@@ -285,7 +284,6 @@ img {
     #right-btn {
         width: 440px;
         height: 200px;
-        margin-top: -30px;
         font-size: 110px;
     }
 

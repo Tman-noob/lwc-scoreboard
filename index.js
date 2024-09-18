@@ -1,3 +1,11 @@
+document.addEventListener(
+    "dblclick",
+    function (event) {
+      event.preventDefault();
+    },
+    { passive: false }
+  );
+
 let leftEl = document.getElementById("left-btn");
 let rightEl = document.getElementById("right-btn");
 let leftRmvEl = document.getElementById("left-btn-rmv");
