@@ -175,6 +175,19 @@ h2 {
     #right-btn {
         width: 400px;
         height: 200px;
+        border-radius: 10px;
+        font-size: 120px;
+    }
+
+    #right-btn-rmv,
+    #left-btn-rmv {
+        width: 190px;
+        font-size: 25px;
+    }
+
+    #reset-btn {
+        margin-top: -20px;
+        font-size: 25px;
     }
 }
 
