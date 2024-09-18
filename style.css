@@ -206,7 +206,7 @@ h2 {
     }
 }
 
-@media (min-width: 844px) and (orientation: landscape) {
+@media (min-width: 844px){
     img {
         width: 50px;
         height: 60px;
@@ -218,9 +218,8 @@ h2 {
     
     #left-btn,
     #right-btn {
-        margin-top: -20px;
-        width: 400px;
-        height: 175px;
+        width: 450px;
+        height: 250px;
         font-size: 90px;
     }
 
