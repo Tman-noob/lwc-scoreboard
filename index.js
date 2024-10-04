@@ -1,70 +1,31 @@
-document.addEventListener(
-    "dblclick",
-    function (event) {
-      event.preventDefault();
-    },
-    { passive: false }
-  );
+const userInput = document.getElementById("user-input")
+const convertBtn = document.getElementById("convert-btn")
+const length = document.getElementById("length-p")
+const volume = document.getElementById("volume-p")
+const mass = document.getElementById("mass-p")
+let inputError = document.getElementById("input-error")
 
-let leftEl = document.getElementById("left-btn");
-let rightEl = document.getElementById("right-btn");
-let leftRmvEl = document.getElementById("left-btn-rmv");
-let rightRmvEl = document.getElementById("right-btn-rmv");
-let resetEl = document.getElementById("reset-btn");
-let leftCount = 0;
-let rightCount = 0;
+userInput.addEventListener("keypress", function() {
+    if (event.key === "Enter") {
+        convertBtn.click()
+    }
+})
 
-function left() {
-    leftCount += 1;
-    if (leftCount < 10) {
-        leftEl.textContent = "0" + leftCount;
+convertBtn.addEventListener("click", function() {
+    const unit = userInput.value
+    const meters = unit * 0.305
+    const feet = unit * 3.281
+    const liters = unit * 0.264
+    const gallons = unit * 3.785
+    const kilos = unit * 0.453
+    const pounds = unit * 2.204
+    if (isNaN(meters)) {
+        alert("User a number!")
+    } else if (meters === 0) {
+        alert("Use numbers only!")
     } else {
-        leftEl.textContent = leftCount;
+        length.innerHTML = `${unit} meters = ${ feet.toFixed(3) } feet | ${unit} feet = ${ meters.toFixed(3) } meters`
+        volume.innerHTML = `${unit} liters = ${ gallons.toFixed(3) } gallons | ${unit} gallons = ${ liters.toFixed(3) } liters`
+        mass.innerHTML = `${unit} kilos = ${ pounds.toFixed(3) } pounds | ${unit} pounds = ${ kilos.toFixed(3) } kilos`
     }
-}
-
-function leftRmv() {
-    if (leftCount > 0 && leftCount <= 10) {
-        leftCount -= 1;
-        leftEl.textContent = "0" + leftCount;
-    } else if (leftCount > 10) {
-        leftCount -= 1;
-        leftEl.textContent = leftCount;
-    }
-}
-
-function right() {
-    rightCount += 1;
-    if (rightCount < 10) {
-        rightEl.textContent = "0" + rightCount;
-    } else {
-        rightEl.textContent = rightCount;
-    }
-}
-
-function rightRmv() {
-    if (rightCount > 0 && rightCount <= 10) {
-        rightCount -= 1;
-        rightEl.textContent = "0" + rightCount;
-    } else if (rightCount > 10) {
-        rightCount -= 1;
-        rightEl.textContent = rightCount;
-    }
-}
-
-function reset() {
-    leftCount *= 0;
-    rightCount *= 0;
-    rightEl.textContent = "00";
-    leftEl.textContent = "00";
-}
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(error) {
-            console.log('ServiceWorker registration failed: ', error);
-        });
-    });
-}
+})
