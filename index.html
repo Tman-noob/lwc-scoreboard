@@ -2,31 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="index.css">
-    <title>Unit Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/lwc-scoreboard/manifest.json">
+    <link rel="icon" type="png" href="mobile_ts.png">
+    <title>LWC Scoreboard</title>
 </head>
 <body>
-    <section class="top">
-        <h1>Metric/Imperial Unit Conversion</h1>
-        <input id="user-input" type="text" placeholder="0">
-        <button id="convert-btn">Convert</button>
-        <p id="input-error"></p>
-    </div>
-
-    <section class="bottom">
-        <div class="length">
-            <h2>Length (Meter/Feet)</h2>
-            <p id="length-p">meters = feet | feet = meters</p>
+    <div class="body">
+        <section class="head">
+            <img src="lwc_logo.png">
+            <div class="nav">
+                <h2>LWC Scoreboard</h2>
+            </div>
+        </section>
+        <div class="buttons">
+            <div class="left">
+                <button id="left-btn" onclick="left()">00</button>
+                <button id="left-btn-rmv" onclick="leftRmv()">Remove Point</button>
+            </div>
+            <div class="right">
+                <button id="right-btn" onclick="right()">00</button>
+                <button id="right-btn-rmv" onclick="rightRmv()">Remove Point</button>
+            </div>
         </div>
-        <div class="volume">
-            <h2>Volume (Liters/Gallons)</h2>
-            <p id="volume-p">liters = gallons | gallons = liters</p>
+        <div class="reset">
+            <button id="reset-btn" onclick="reset()">RESET</button>
         </div>
-        <div class="mass">
-            <h2>Mass(Kilograms/Pounds)</h2>
-            <p id="mass-p">kilos = pounds | pounds = kilos</p>
-        </div>        
     </div>
     <script src="index.js"></script>
 </body>
